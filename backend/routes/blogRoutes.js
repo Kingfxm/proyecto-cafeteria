@@ -1,5 +1,9 @@
 const express = require("express");
-const { createEntry, getEntries, getMiniBlogEntries } = require("../controllers/blogController");
+const {
+  createEntry,
+  getEntries,
+  getMiniBlogEntries,
+} = require("../controllers/blogController");
 const { verifyToken } = require("../middleware/authMiddleware");
 
 const router = express.Router();
